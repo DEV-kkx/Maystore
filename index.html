@@ -3,165 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoalZone - Soccer Store</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>FutStore - Loja de Artigos de Futebol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
+    <!-- Top Bar -->
+    <div class="top-bar">
         <div class="container">
-            <div class="logo">
-                <h1>GoalZone</h1>
-                <p>Your Ultimate Soccer Store</p>
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> (11) 9999-9999</span>
+                <span><i class="fas fa-envelope"></i> contato@futstore.com</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#jerseys">Jerseys</a></li>
-                    <li><a href="#balls">Soccer Balls</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero" id="home">
-        <div class="container">
-            <h2>Official Soccer Gear</h2>
-            <p>Authentic jerseys from top clubs and premium match balls</p>
-            <a href="#jerseys" class="btn">Shop Now</a>
-        </div>
-    </section>
-
-    <section class="products" id="jerseys">
-        <div class="container">
-            <h2>Soccer Jerseys</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Real+Madrid+Home" alt="Real Madrid Home Jersey">
-                    <h3>Real Madrid Home 2023/24</h3>
-                    <p class="price">$89.99</p>
-                    <button class="add-to-cart" data-id="1" data-name="Real Madrid Home" data-price="89.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Barcelona+Away" alt="Barcelona Away Jersey">
-                    <h3>Barcelona Away 2023/24</h3>
-                    <p class="price">$84.99</p>
-                    <button class="add-to-cart" data-id="2" data-name="Barcelona Away" data-price="84.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Manchester+United+Home" alt="Manchester United Home Jersey">
-                    <h3>Man United Home 2023/24</h3>
-                    <p class="price">$79.99</p>
-                    <button class="add-to-cart" data-id="3" data-name="Man United Home" data-price="79.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Liverpool+Third" alt="Liverpool Third Jersey">
-                    <h3>Liverpool Third 2023/24</h3>
-                    <p class="price">$74.99</p>
-                    <button class="add-to-cart" data-id="4" data-name="Liverpool Third" data-price="74.99">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="products" id="balls">
-        <div class="container">
-            <h2>Soccer Balls</h2>
-            <div class="product-grid">
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Nike+Match+Ball" alt="Nike Match Ball">
-                    <h3>Nike Premier League Match Ball</h3>
-                    <p class="price">$149.99</p>
-                    <button class="add-to-cart" data-id="5" data-name="Nike Match Ball" data-price="149.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Adidas+Champions+League" alt="Adidas Champions League Ball">
-                    <h3>Adidas Champions League Ball</h3>
-                    <p class="price">$129.99</p>
-                    <button class="add-to-cart" data-id="6" data-name="Adidas CL Ball" data-price="129.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 7 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Puma+Training+Ball" alt="Puma Training Ball">
-                    <h3>Puma Training Ball</h3>
-                    <p class="price">$39.99</p>
-                    <button class="add-to-cart" data-id="7" data-name="Puma Training Ball" data-price="39.99">Add to Cart</button>
-                </div>
-                
-                <!-- Product 8 -->
-                <div class="product-card">
-                    <img src="https://via.placeholder.com/300x300?text=Select+Futsal+Ball" alt="Select Futsal Ball">
-                    <h3>Select Futsal Ball</h3>
-                    <p class="price">$49.99</p>
-                    <button class="add-to-cart" data-id="8" data-name="Select Futsal Ball" data-price="49.99">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About GoalZone</h2>
-            <p>GoalZone is your premier destination for authentic soccer jerseys and high-quality soccer balls. We partner directly with clubs and manufacturers to bring you official merchandise at competitive prices.</p>
-            <p>Our mission is to provide soccer fans with the gear they need to support their favorite teams and enjoy the beautiful game.</p>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 GoalZone Soccer Store. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Shopping Cart Modal -->
-    <div class="cart-modal">
-        <div class="cart-content">
-            <span class="close-cart">&times;</span>
-            <h2>Your Cart</h2>
-            <div class="cart-items">
-                <!-- Cart items will be added here dynamically -->
-            </div>
-            <div class="cart-total">
-                <p>Total: $<span>0.00</span></p>
-                <button class="checkout-btn">Proceed to Checkout</button>
+            <div class="account-links">
+                <a href="account/login.html"><i class="fas fa-user"></i> Login</a>
+                <a href="account/register.html">Cadastre-se</a>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>FutStore</h1>
+                <p>Paixão pelo futebol</p>
+            </div>
+            
+            <div class="search-bar">
+                <form action="products.html" method="GET">
+                    <input type="text" placeholder="Buscar produtos..." name="search">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            
+            <div class="header-actions">
+                <a href="account/dashboard.html" class="wishlist"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Camisas</a></li>
+                <li><a href="products.html?category=chuteiras">Chuteiras</a></li>
+                <li><a href="products.html?category=bolas">Bolas</a></li>
+                <li><a href="products.html?category=acessorios">Acessórios</a></li>
+                <li><a href="#">Lançamentos</a></li>
+                <li><a href="#">Ofertas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Coleção 2023/24</h2>
+                <p>Camisas oficiais dos principais times nacionais e europeus</p>
+                <a href="products.html" class="btn">Compre Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="featured-categories">
+        <div class="container">
+            <h2 class="section-title">Categorias em Destaque</h2>
+            <div class="categories-grid">
+                <a href="products.html?category=camisas" class="category-card">
+                    <img src="images/camisas-category.jpg" alt="Camisas de Times">
+                    <h3>Camisas</h3>
+                </a>
+                <a href="products.html?category=chuteiras" class="category-card">
+                    <img src="images/chuteiras-category.jpg" alt="Chuteiras">
+                    <h3>Chuteiras</h3>
+                </a>
+                <a href="products.html?category=bolas" class="category-card">
+                    <img src="images/bolas-category.jpg" alt="Bolas de Futebol">
+                    <h3>Bolas</h3>
+                </a>
+                <a href="products.html?category=acessorios" class="category-card">
+                    <img src="images/acessorios-category.jpg" alt="Acessórios">
+                    <h3>Acessórios</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Produtos em Destaque</h2>
+            <div class="products-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <div class="product-badge">Novidade</div>
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <button class="quick-view" data-id="1">Visualizar</button>
+                    </div>
+                    <img src="images/camisa-flamengo-2023.jpg" alt="Camisa Flamengo 2023">
+                    <div class="product-info">
+                        <span class="product-category">Camisas</span>
+                        <h3><a href="product-detail.html?id=1">Camisa Flamengo I 2023/24</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(24)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R$ 299,90</span>
+                            <span class="old-price">R$ 349,90</span>
+                        </div>
+                        <button class="add-to-cart" data-id="1">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <div class="product-badge">-15%</div>
+                    <div class="product-actions">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        <button class="quick-view" data-id="2">Visualizar</button>
+                    </div>
+                    <img src="images/chuteira-nike-mercurial.jpg" alt="Chuteira Nike Mercurial">
+                    <div class="product-info">
+                        <span class="product-category">Chuteiras</span>
+                        <h3><a href="product-detail.html?id=2">Chuteira Nike Mercurial Vapor 15</a></h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(18)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R$ 899,90</span>
+                            <span class="old-price">R$ 1.059,90</span>
+                        </div>
+                        <button class="add-to-cart" data-id="2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+                
+                <!-- Mais produtos... -->
+            </div>
+            <a href="products.html" class="view-all-btn">Ver Todos os Produtos</a>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">Marcas Parceiras</h2>
+            <div class="brands-slider">
+                <img src="images/nike-logo.png" alt="Nike">
+                <img src="images/adidas-logo.png" alt="Adidas">
+                <img src="images/puma-logo.png" alt="Puma">
+                <img src="images/new-balance-logo.png" alt="New Balance">
+                <img src="images/umbro-logo.png" alt="Umbro">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Assine nossa Newsletter</h2>
+                <p>Receba ofertas exclusivas e novidades sobre seu time favorito</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn">Assinar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>FutStore</h3>
+                    <p>A maior loja de artigos de futebol do Brasil. Oferecemos produtos oficiais com qualidade e procedência garantidas.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Nossas Lojas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Serviço</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Minha Conta</h3>
+                    <ul>
+                        <li><a href="account/login.html">Minha Conta</a></li>
+                        <li><a href="cart.html">Meu Carrinho</a></li>
+                        <li><a href="account/dashboard.html">Lista de Desejos</a></li>
+                        <li><a href="#">Rastrear Pedido</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Paulista, 1000 - São Paulo/SP</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-envelope"></i> contato@futstore.com</li>
+                        <li><i class="fas fa-clock"></i> Seg-Sex: 9h-18h | Sáb: 9h-13h</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FutStore. Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <img src="images/visa.png" alt="Visa">
+                    <img src="images/mastercard.png" alt="Mastercard">
+                    <img src="images/amex.png" alt="American Express">
+                    <img src="images/boleto.png" alt="Boleto">
+                    <img src="images/pix.png" alt="Pix">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal quick-view-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Conteúdo carregado via AJAX -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
