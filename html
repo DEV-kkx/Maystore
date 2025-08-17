@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalZone - Soccer Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>GoalZone</h1>
+                <p>Your Ultimate Soccer Store</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#jerseys">Jerseys</a></li>
+                    <li><a href="#balls">Soccer Balls</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Official Soccer Gear</h2>
+            <p>Authentic jerseys from top clubs and premium match balls</p>
+            <a href="#jerseys" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="products" id="jerseys">
+        <div class="container">
+            <h2>Soccer Jerseys</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Real+Madrid+Home" alt="Real Madrid Home Jersey">
+                    <h3>Real Madrid Home 2023/24</h3>
+                    <p class="price">$89.99</p>
+                    <button class="add-to-cart" data-id="1" data-name="Real Madrid Home" data-price="89.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Barcelona+Away" alt="Barcelona Away Jersey">
+                    <h3>Barcelona Away 2023/24</h3>
+                    <p class="price">$84.99</p>
+                    <button class="add-to-cart" data-id="2" data-name="Barcelona Away" data-price="84.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Manchester+United+Home" alt="Manchester United Home Jersey">
+                    <h3>Man United Home 2023/24</h3>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart" data-id="3" data-name="Man United Home" data-price="79.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Liverpool+Third" alt="Liverpool Third Jersey">
+                    <h3>Liverpool Third 2023/24</h3>
+                    <p class="price">$74.99</p>
+                    <button class="add-to-cart" data-id="4" data-name="Liverpool Third" data-price="74.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="balls">
+        <div class="container">
+            <h2>Soccer Balls</h2>
+            <div class="product-grid">
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Nike+Match+Ball" alt="Nike Match Ball">
+                    <h3>Nike Premier League Match Ball</h3>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart" data-id="5" data-name="Nike Match Ball" data-price="149.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Adidas+Champions+League" alt="Adidas Champions League Ball">
+                    <h3>Adidas Champions League Ball</h3>
+                    <p class="price">$129.99</p>
+                    <button class="add-to-cart" data-id="6" data-name="Adidas CL Ball" data-price="129.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Puma+Training+Ball" alt="Puma Training Ball">
+                    <h3>Puma Training Ball</h3>
+                    <p class="price">$39.99</p>
+                    <button class="add-to-cart" data-id="7" data-name="Puma Training Ball" data-price="39.99">Add to Cart</button>
+                </div>
+                
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x300?text=Select+Futsal+Ball" alt="Select Futsal Ball">
+                    <h3>Select Futsal Ball</h3>
+                    <p class="price">$49.99</p>
+                    <button class="add-to-cart" data-id="8" data-name="Select Futsal Ball" data-price="49.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About GoalZone</h2>
+            <p>GoalZone is your premier destination for authentic soccer jerseys and high-quality soccer balls. We partner directly with clubs and manufacturers to bring you official merchandise at competitive prices.</p>
+            <p>Our mission is to provide soccer fans with the gear they need to support their favorite teams and enjoy the beautiful game.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 GoalZone Soccer Store. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="cart-total">
+                <p>Total: $<span>0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
